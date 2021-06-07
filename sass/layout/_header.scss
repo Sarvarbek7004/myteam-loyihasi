@@ -1,0 +1,66 @@
+.header{
+    min-height: 70rem;
+    padding-top: 7.3rem;
+    background-image: url(..//..//images/hero-img-1.png),url(..//..//images/hero-img-2.png);
+    background-repeat: no-repeat;
+    background-size: 10rem 20rem,35.8rem 10rem;
+    background-position: 0 50%,right 16.5rem bottom 0%;
+}
+.nav{
+    @extend %flexCenter;
+    &__logo{
+        margin-right: 8rem;
+    }
+}
+.list{
+    display: flex;
+    list-style: none;
+
+    &__item{
+      &:not(:last-child){
+          margin-right: 4rem;
+      }
+    }
+    &__link{
+        text-decoration: none;
+        color: inherit;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        &:active{
+            color: #F67E7E;
+        }
+    }
+}
+.the__best{
+    margin-top: 12.9rem;
+    &__container{
+        @extend %flexCenter;
+    }
+    &__heading{
+    width:62.0rem;
+    margin: 0;
+    margin-right: 3rem;
+    font-weight: bold;
+    font-size: 10rem;
+    line-height: 10rem;
+    color: $color-white;
+    &__light{
+       color:#F67E7E;
+    }
+}
+    &__line{
+        margin-bottom: 7.9rem;
+        width: 5rem;
+        height: 4px;
+        background: #79C8C7;
+    }
+    &__text{
+        width: 44.5rem;
+        font-weight: 600;
+        font-size: 18px;
+         line-height: 28px;
+         color: $color-white;
+
+    }
+}

@@ -1,0 +1,30 @@
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: $color-white;
+    margin-left: auto;
+    border: 2px solid $color-white;
+    border-radius: 2.4rem;
+    padding: 1rem 3.3rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    &:active{
+        background: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 24px;
+        color: #002529;
+    }
+    &--survey{
+        border: 2px solid $color-sacramento-state-green;
+        border-radius: 24px;
+        color: $color-sacramento-state-green;
+        margin: 0;
+        &:active{
+            background: $color-sacramento-state-green;
+            border: 2px solid $color-sacramento-state-green;
+            border-radius: 24px;
+            color: $color-white;
+        }
+    }
+}

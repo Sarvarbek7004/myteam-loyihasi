@@ -1,0 +1,44 @@
+.footer{
+    padding-top: 4.8rem;
+    padding-bottom:4.8rem;
+    &__container{
+        display: flex;
+    }
+    &--img{
+        margin-bottom: 2.5rem;
+    }
+    &__text{
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: $color-white;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+    }
+    &__right{
+        max-width: 25.5rem;
+        margin-left: auto;
+
+    &__text{
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        color: $color-white;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+        margin-top: 5.1rem;
+    }
+    }
+    &__svg{
+        margin-left:15.4rem;
+    }
+    
+    
+}
+svg:active{
+    color:$color-light-coral;
+}
+.icon:nth-child(2){
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
