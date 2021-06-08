@@ -32,13 +32,19 @@
     &__svg{
         margin-left:15.4rem;
     }
+    &__svg__link:nth-child(2){
+         margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    }
     
     
+}
+svg{
+    color:$color-white;
 }
 svg:active{
     color:$color-light-coral;
 }
 .icon:nth-child(2){
-    margin-left: 1.2rem;
-    margin-right: 1.2rem;
+   
 }

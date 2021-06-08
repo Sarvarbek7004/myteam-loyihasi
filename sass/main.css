@@ -564,13 +564,17 @@ template {
   margin-left: 15.4rem;
 }
 
-svg:active {
-  color: #F67E7E;
-}
-
-.icon:nth-child(2) {
+.footer__svg__link:nth-child(2) {
   margin-left: 1.2rem;
   margin-right: 1.2rem;
+}
+
+svg {
+  color: #fff;
+}
+
+svg:active {
+  color: #F67E7E;
 }
 
 .team {
@@ -587,10 +591,9 @@ svg:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.team__left {
-  margin-right: 12.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .team__link {
@@ -743,36 +746,13 @@ svg:active {
   line-height: 1.8rem;
   text-align: center;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
-.about__us__icon__text3::after {
-  content: "";
-  display: inline-block;
+.about__us__img {
   width: 6.2rem;
   height: 6.2rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 auto;
-  margin-top: 32px;
-}
-
-.about__us--img1::after {
-  background-image: url(../../images/about__as_img1.png);
-}
-
-.about__us--img2::after {
-  background-image: url(../../images/about__as_img21.png);
-}
-
-.about__us--img3::after {
-  background-image: url(../../images/about__as_img3.png);
+  margin-left: 14.1rem;
+  margin-top: 3.2rem;
 }
 
 .survey {

@@ -10,11 +10,12 @@
     background-position: right bottom 0%;
       &__container{
           display: flex;
+          justify-content: space-between;
       }
 
 
     &__left{
-        margin-right: 12.5rem;
+        // margin-right: 12.5rem;
     }
 
     &__link{
@@ -145,33 +146,39 @@
         line-height: 1.8rem;
         text-align: center;
         color: $color-white;
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
 
-        &::after{
+        // &::after{
 
-            content: "";
-            display: inline-block;
-            width:6.2rem;
-            height:6.2rem;
+        //     content: "";
+        //     display: inline-block;
+        //     width:6.2rem;
+        //     height:6.2rem;
             
-            background-repeat: no-repeat;
-            background-size: contain;
-            margin: 0 auto;
-            margin-top: 32px;
+        //     background-repeat: no-repeat;
+        //     background-size: contain;
+        //     margin: 0 auto;
+        //     margin-top: 32px;
 
-        }
+        // }
     }
-    
-    &--img1::after{
-        background-image: url(../../images/about__as_img1.png);
+    &__img{
+        
+        width: 6.2rem;
+        height: 6.2rem;
+        margin-left: 14.1rem;
+        margin-top: 3.2rem;
     }
-    &--img2::after{
-        background-image: url(../../images/about__as_img21.png);
-    }
-    &--img3::after{
-        background-image: url(../../images/about__as_img3.png);
-    }
+    // &--img1::after{
+    //     background-image: url(../../images/about__as_img1.png);
+    // }
+    // &--img2::after{
+    //     background-image: url(../../images/about__as_img21.png);
+    // }
+    // &--img3::after{
+    //     background-image: url(../../images/about__as_img3.png);
+    // }
 }
 
 // SURVEY
