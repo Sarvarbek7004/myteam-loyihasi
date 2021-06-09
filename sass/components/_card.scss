@@ -1,0 +1,30 @@
+.svg--icon1{
+    margin-right: 1.6rem;
+}
+.direction-btn{
+    width: 5.6rem;
+    height: 5.6rem;
+    background-color: #F67E7E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom :-2.7rem;
+    right: 14.8rem;
+    &:active{
+        background: #79C8C7;
+    }
+}
+.dierection-btn-img{
+    width: 1.6rem;
+    height: 1.6rem;
+    vertical-align: middle;
+    
+}
+.direction--plus{
+    background: #79C8C7;
+    &:active{
+        background: #F67E7E;
+    }
+}
