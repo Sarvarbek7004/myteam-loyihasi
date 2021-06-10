@@ -8,13 +8,14 @@
     &__about{
         padding-top: 12rem;
         display: flex;
+        justify-content: space-between;
         
         &__heading{
             font-weight: bold;
             font-size: 6.4rem;
             line-height: 10rem;
             color: $color-white;
-            margin-right: 19rem;
+           
             
         }
         &__text{
