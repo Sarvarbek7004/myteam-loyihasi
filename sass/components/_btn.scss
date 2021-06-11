@@ -9,6 +9,9 @@
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 2.8rem;
+    @include respond(phones){
+        margin-left: auto;
+      }
     &:active{
         background: #FFFFFF;
         border: 2px solid #FFFFFF;

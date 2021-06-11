@@ -1,11 +1,45 @@
 .footer{
     padding-top: 4.8rem;
     padding-bottom:4.8rem;
+    @include respond(phones){
+        padding-top: 5.6rem;
+        padding-bottom:5.6rem;
+      }
+      &--list--item{
+        &:not(:last-child){
+            margin-right: 4rem;
+            @include respond(phones){
+                margin-right: 2.4rem;
+            }
+        }
+      }
+      &--list-link{
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        @include respond(phones){
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+          }
+      }
+    &__left__icon{
+        display: flex;
+        @include respond(phones){
+            justify-content: space-between;
+          }
+    }
     &__container{
         display: flex;
+        @include respond(phones){
+            flex-direction: column;
+          }
     }
     &--img{
         margin-bottom: 2.5rem;
+        @include respond(phones){
+            width:9.6rem;
+            height:2.4rem;
+            margin-bottom: 5.3rem;
+          }
     }
     &__text{
         font-weight: 600;
@@ -14,10 +48,20 @@
         color: $color-white;
         mix-blend-mode: normal;
         opacity: 0.6;
+        @include respond(phones){
+            text-align: right;
+          }
     }
     &__right{
         max-width: 25.5rem;
         margin-left: auto;
+        @include respond(phones){
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            max-width: 100%;
+            margin-top: 3.4rem;
+          }
 
     &__text{
         font-weight: 600;
@@ -27,17 +71,25 @@
         mix-blend-mode: normal;
         opacity: 0.6;
         margin-top: 5.1rem;
+        @include respond(phones){
+            margin: 0;
+            
+          }
     }
     }
     &__svg{
+        display: flex;
         margin-left:15.4rem;
+        @include respond(phones){
+            margin: 0;
+          }
     }
     &__svg__link:nth-child(2){
          margin-left: 1.2rem;
     margin-right: 1.2rem;
     }
     
-    
+
 }
 svg{
     color:$color-white;

@@ -8,9 +8,16 @@
     background-repeat:no-repeat;
     background-size:10rem 24.4rem;
     background-position: right bottom 0%;
+    @include respond(phones){
+        padding:10rem 5.8rem 10rem 5.6rem;
+        background-position: right top 0%;
+      }
       &__container{
           display: flex;
           justify-content: space-between;
+          @include respond(phones){
+            flex-direction: column;
+          }
       }
 
 
@@ -26,6 +33,11 @@
         font-weight: bold;
         font-size: 4.8rem;
         line-height: 4.8rem;
+        @include respond(phones){
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            max-width:44.5rem;
+          }
     }
     &__right__all{
         display: flex;
@@ -87,6 +99,10 @@
     background-repeat:no-repeat;
     background-size:14.7rem 10rem,20rem 10rem;
     background-position: left top 0%,right bottom 0%;
+    @include respond(phones){
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+      }
     &__heading{
         margin: 0 auto;
         max-width: 95rem;
@@ -96,16 +112,34 @@
         text-align: center;
         color:$color-white;
         margin-bottom: 5.6rem;
+        @include respond(phones){
+            width: 49.1rem;
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            margin-bottom: 4.8rem;
+          }
         &__rapture__blue{
         color:$color-rapture-blue;
+       
     }
     }
     &__icon{
         max-width: 35rem;
+        @include respond(phones){
+           max-width:57.3rem
+          }
+          &:nth-child(2){
+              margin-top: 4.8rem;
+              margin-bottom: 4.8rem;
+          }
     }
     &__bottom{
         display: flex;
         justify-content: space-between;
+        @include respond(phones){
+            flex-direction: column;
+            align-items: center;
+          }
     }
     &__icon__text1{
         font-weight: 600;
@@ -135,6 +169,10 @@
         color: $color-white;
         margin-top: 2.4rem;
         margin-bottom: 2px;
+        @include respond(phones){
+            margin-top: 1.6rem;
+            margin-bottom: 2px;
+          }
     }
     &__icon__text3{
         font-weight: 500;
@@ -162,15 +200,24 @@
     background-repeat:no-repeat;
     background-size:20rem 13rem;
     background-position: left bottom 0%;
+    @include respond(phones){
+        padding-top:8.4rem;
+        padding-bottom: 8.4rem;
+      }
 
     &__heading{
         font-weight: bold;
         font-size: 4.8rem;
         line-height: 4.8rem;
         color: $color-sacramento-state-green;  
+        @include respond(phones){
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+          }
     }
     &__container{
         display: flex;
         justify-content:space-around;
+        align-items: center;
     }
 }
