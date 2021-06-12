@@ -5,16 +5,29 @@
     background-repeat: no-repeat;
     background-size:10rem 20rem;
     background-position: right bottom 0%;
+    @include respond(phones){
+        min-height: 55.6rem;
+      }
     &__about{
         padding-top: 12rem;
         display: flex;
         justify-content: space-between;
+        @include respond(phones){
+            padding-top: 11.2rem;
+          }
+        @include respond(phones){
+            flex-direction: column;
+          }
         
         &__heading{
             font-weight: bold;
             font-size: 6.4rem;
             line-height: 10rem;
             color: $color-white;
+            @include respond(phones){
+                text-align: center;
+                line-height: 5.6rem;
+              }
         }
         &__text{
             max-width: 73rem;
@@ -22,6 +35,15 @@
             font-size: 1.8rem;
             line-height: 2.8rem;
             color:$color-white;
+            @include respond(phones){
+                font-size: 1.5rem;
+                line-height: 2.8rem;
+                width: 45.7rem;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 2.4rem;
+              }
             
         }
         &__line{
@@ -29,6 +51,9 @@
         width: 5rem;
         height: 4px;
         background:$color-rapture-blue;
+        @include respond(phones){
+           display: none;
+          }
         }
     }
     .header--about--line{
@@ -43,6 +68,9 @@
     background-repeat: no-repeat;
     background-size:10rem 20rem,14.7rem 10rem;
     background-position: left top 0% ,right bottom 0%;
+    @include respond(phones){
+       padding: 10rem 5.8rem 12.8rem 5.8rem;
+      }
     &__heading{
         font-weight: bold;
         font-size: 4.8rem;
@@ -55,6 +83,7 @@
         margin-top: 6.4rem;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         &__icon{
               
@@ -62,6 +91,10 @@
               padding: 3.2rem 2.4rem 5.6rem 2.4rem;
               background-color: $color-sacramento-state-green;
               position:relative;
+              margin-bottom: 7.6rem;
+              @include respond(phones){
+                width: 27.2rem;
+              }
             &__list{
             
 
@@ -104,6 +137,15 @@
               padding: 3.2rem 2.4rem 5.6rem 2.4rem;
               background-color: $color-sacramento-state-green;
               position: relative;
+              @include respond(phones){
+                width: 27.2rem;
+              }
+
+              &:nth-child(4){
+                @include respond(phones){
+                  margin-bottom: 7.6rem;
+                  }
+              }
               &__svg{
                   margin-top: 2.4rem;
                   display: flex;
@@ -132,7 +174,10 @@
             text-align: center;
             margin: 0 auto;
             margin-top: 8px;
-            color: #FFFFFF;  
+            color: #FFFFFF; 
+            @include respond(phones){
+                width: 22.8rem;
+              } 
         }
     }
 }            
@@ -180,6 +225,15 @@
     background-repeat: no-repeat;
     background-size:20rem 20rem;
     background-position: left top 0%;
+    @include respond(phones){
+        background-image:url(../../images/combinet.png);
+        background-size: 20rem 10rem;
+      }
+    @include respond(phones){
+       min-height: 30.8rem;
+       padding-top: 10rem;
+       padding-bottom: 10rem;
+      }
     &__heading{
         font-weight: bold;
         font-size: 4.8rem;
@@ -187,12 +241,57 @@
         text-align: center;
         color: #FFFFFF;
         margin-bottom: 7rem;
+        @include respond(phones){
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            margin-bottom: 4.8rem;
+          }
         
     }
     &__icon{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &__img__1{
+            width:16.5rem;
+            height: 2.8rem;
+            @include respond(phones){
+                width:10.3rem;
+                height: 1.7rem;
+              }
+        }
+        &__img__2{
+            width:18.4rem;
+            height:2.3rem;
+            @include respond(phones){
+                width:11.4rem;
+                height: 1.4rem;
+              }
+        }
+        &__img__3{
+            width:18rem;
+            height:2.8rem;
+            @include respond(phones){
+                width:11.2rem;
+                height: 1.7rem;
+              }
+        }
+        &__img__4{
+            width:16.5rem;
+            height:2.8rem;
+            @include respond(phones){
+                width:10.3rem;
+                height: 1.7rem;
+              }
+        }
+        &__img__5{
+            width:9.8rem;
+            height:4.5rem;
+            @include respond(phones){
+                width:6.1rem;
+                height: 2.8rem;
+              }
+        }
     }
 }
 

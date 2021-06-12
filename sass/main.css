@@ -41,7 +41,7 @@ body {
 
 @media only screen and (max-width: 900px) {
   .container {
-    padding-left: 40px;
+    padding-left: 39px;
     padding-right: 40px;
   }
 }
@@ -485,7 +485,9 @@ template {
   border-radius: 50%;
   position: absolute;
   bottom: -2.7rem;
-  right: 14.8rem;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .direction-btn:active {
@@ -1084,6 +1086,12 @@ svg:active {
   background-position: right bottom 0%;
 }
 
+@media only screen and (max-width: 900px) {
+  .header__section {
+    min-height: 55.6rem;
+  }
+}
+
 .header__section__about {
   padding-top: 12rem;
   display: -webkit-box;
@@ -1094,11 +1102,33 @@ svg:active {
           justify-content: space-between;
 }
 
+@media only screen and (max-width: 900px) {
+  .header__section__about {
+    padding-top: 11.2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header__section__about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .header__section__about__heading {
   font-weight: bold;
   font-size: 6.4rem;
   line-height: 10rem;
   color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .header__section__about__heading {
+    text-align: center;
+    line-height: 5.6rem;
+  }
 }
 
 .header__section__about__text {
@@ -1109,11 +1139,29 @@ svg:active {
   color: #fff;
 }
 
+@media only screen and (max-width: 900px) {
+  .header__section__about__text {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    width: 45.7rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.4rem;
+  }
+}
+
 .header__section__about__line {
   margin-bottom: 4rem;
   width: 5rem;
   height: 4px;
   background: #79C8C7;
+}
+
+@media only screen and (max-width: 900px) {
+  .header__section__about__line {
+    display: none;
+  }
 }
 
 .header__section .header--about--line {
@@ -1128,6 +1176,12 @@ svg:active {
   background-repeat: no-repeat;
   background-size: 10rem 20rem,14.7rem 10rem;
   background-position: left top 0% ,right bottom 0%;
+}
+
+@media only screen and (max-width: 900px) {
+  .direction {
+    padding: 10rem 5.8rem 12.8rem 5.8rem;
+  }
 }
 
 .direction__heading {
@@ -1146,6 +1200,8 @@ svg:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .direction__top__icon {
@@ -1153,6 +1209,13 @@ svg:active {
   padding: 3.2rem 2.4rem 5.6rem 2.4rem;
   background-color: #012F34;
   position: relative;
+  margin-bottom: 7.6rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .direction__top__icon {
+    width: 27.2rem;
+  }
 }
 
 .direction__top__icon__list__img {
@@ -1197,6 +1260,18 @@ svg:active {
   position: relative;
 }
 
+@media only screen and (max-width: 900px) {
+  .direction__bottom__icon {
+    width: 27.2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .direction__bottom__icon:nth-child(4) {
+    margin-bottom: 7.6rem;
+  }
+}
+
 .direction__bottom__icon__svg {
   margin-top: 2.4rem;
   display: -webkit-box;
@@ -1228,6 +1303,12 @@ svg:active {
   margin: 0 auto;
   margin-top: 8px;
   color: #FFFFFF;
+}
+
+@media only screen and (max-width: 900px) {
+  .direction__bottom__icon__last__list__text__2 {
+    width: 22.8rem;
+  }
 }
 
 .direction__bottom__icon__list__img {
@@ -1265,6 +1346,21 @@ svg:active {
   background-position: left top 0%;
 }
 
+@media only screen and (max-width: 900px) {
+  .clients {
+    background-image: url(../../images/combinet.png);
+    background-size: 20rem 10rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .clients {
+    min-height: 30.8rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}
+
 .clients__heading {
   font-weight: bold;
   font-size: 4.8rem;
@@ -1272,6 +1368,14 @@ svg:active {
   text-align: center;
   color: #FFFFFF;
   margin-bottom: 7rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .clients__heading {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin-bottom: 4.8rem;
+  }
 }
 
 .clients__icon {
@@ -1284,5 +1388,65 @@ svg:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.clients__icon__img__1 {
+  width: 16.5rem;
+  height: 2.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .clients__icon__img__1 {
+    width: 10.3rem;
+    height: 1.7rem;
+  }
+}
+
+.clients__icon__img__2 {
+  width: 18.4rem;
+  height: 2.3rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .clients__icon__img__2 {
+    width: 11.4rem;
+    height: 1.4rem;
+  }
+}
+
+.clients__icon__img__3 {
+  width: 18rem;
+  height: 2.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .clients__icon__img__3 {
+    width: 11.2rem;
+    height: 1.7rem;
+  }
+}
+
+.clients__icon__img__4 {
+  width: 16.5rem;
+  height: 2.8rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .clients__icon__img__4 {
+    width: 10.3rem;
+    height: 1.7rem;
+  }
+}
+
+.clients__icon__img__5 {
+  width: 9.8rem;
+  height: 4.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .clients__icon__img__5 {
+    width: 6.1rem;
+    height: 2.8rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
